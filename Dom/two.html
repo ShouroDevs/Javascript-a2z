@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:black; color:whitesmoke">
+    <div class="parent">
+        <div class="day">saturday</div>
+        <div class="day">sunday</div>
+        <div class="day">monnday</div>
+        <div class="day">tuesday</div>
+    </div>
+</body>
+<script>
+    // const parent= document.querySelector('.parent')
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+    const div= document.createElement("div");
+    console.log(div)
+    div.className="new"
+    div.id="newid"
+    // div.innerText="Shourove"
+    const addtext= document.createTextNode("The metamorphosis")
+    div.appendChild(addtext)
+    document.body.appendChild(div)
+
+
+    
+    
+</script>
+</html>
